@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 校园资源共享网</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/form-validation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo">
+        </div>
+<nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="resources.html">资源分类</a></li>
+            <li><a href="profile.html">个人中心</a></li>
+            <li><a href="login.html">登录</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section class="login-form">
+            <h2>登录</h2>
+            <form action="backend/login.php" method="POST" id="loginForm">
+                <div class="form-group">
+                    <label for="username">用户名</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-primary">登录</button>
+                <p>还没有账号？<a href="register.html">注册</a></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 校园资源共享网. 版权所有.</p>
+    </footer>
+</body>
+</html>

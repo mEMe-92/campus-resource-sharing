@@ -1,0 +1,250 @@
+/* 通用样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0044cc;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* 按钮样式 */
+.btn-primary {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0033aa;
+}
+
+.btn-secondary {
+    background-color: #ddd;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #bbb;
+}
+
+/* 资源卡片样式 */
+.resource-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.resource-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.resource-card h3 {
+    margin-top: 10px;
+}
+
+.resource-card p {
+    color: #555;
+}
+
+.resource-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0044cc;
+    font-weight: bold;
+}
+
+/* 个人中心样式 */
+.user-profile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.user-profile p {
+    font-size: 18px;
+}
+
+.points-exchange {
+    margin-top: 20px;
+}
+
+.available-resources {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.available-resources h4 {
+    margin-bottom: 15px;
+}
+
+.available-resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.available-resources ul li {
+    margin-bottom: 10px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.login-form,
+.register-form,
+.upload-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: url('../assets/images/hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.popular-courses ul {
+    padding: 0;
+}
+
+.popular-courses ul li {
+    margin-bottom: 10px;
+}
+
+.popular-courses ul li a {
+    display: block;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #0044cc;
+    font-weight: bold;
+}
+
+.popular-courses ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* 表单错误样式 */
+.error {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error-field {
+    border-color: #d32f2f !important;
+}
+
+/* 按钮点击动画 */
+.btn-primary, .btn-secondary {
+    transition: transform 0.2s ease;
+}
+
+/* 页面加载动画 */
+body {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}

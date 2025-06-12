@@ -1,0 +1,100 @@
+/* 基本的响应式设计 */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .resource-card {
+        margin: 10px 0;
+    }
+
+    .user-profile, .points-exchange {
+        padding: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .featured-resources {
+        display: block;
+        text-align: center;
+    }
+
+    .resource-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* 小屏幕优化 */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+    .resource-card h3 {
+        font-size: 16px;
+    }
+
+    .points-exchange {
+        margin-top: 15px;
+    }
+
+    .available-resources h4 {
+        font-size: 18px;
+    }
+
+    .user-profile p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px;
+    }
+    
+    .featured-resources {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .resource-card {
+        margin: 0;
+    }
+    
+    .form-group {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav ul li {
+        margin: 0 8px;
+    }
+    
+    .login-form,
+    .register-form,
+    .upload-form {
+        padding: 15px;
+    }
+}
